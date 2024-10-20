@@ -46,25 +46,21 @@ This is the default command that runs the following sequence:
 
 Stops and removes the Docker container.
 
-### `make rebuild`
+### `make build`
 
 Rebuilds the Docker image without using cache.
 
-### `make run-rebuilt`
+### `make run`
 
 Runs the rebuilt Docker container in detached mode.
 
-### `make rebuild-and-run`
+### `make remove`
 
-A combination command that rebuilds the Docker image and then runs the container.
+Removes the Docker image.
 
 ## Usage
 
-To use these commands, simply run `make` followed by the command name. For example:
-
-```bash
-make all
-```
+To use these commands, simply run `make all` followed by the command name. For example:
 
 
 This will execute the default sequence of stopping the container, rebuilding the image, and running the rebuilt container.

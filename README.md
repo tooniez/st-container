@@ -39,6 +39,11 @@ This project uses Docker and Docker Compose to manage the development and deploy
 - Docker Compose
 - Make
 
+## Quick Start
+
+1. Run the hosted gh image `docker run -d -p 8501:8501 ghcr.io/tooniez/streamlit-container-app:latest`
+2. Open the app in the browser `http://localhost:8501`
+
 ## Available Commands
 
 The following commands are available through the Makefile:

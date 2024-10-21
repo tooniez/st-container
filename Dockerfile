@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copy Streamlit app into the container at /app
 COPY streamlit_app.py /app/
+COPY pages /app/
 COPY requirements.txt /app/
 
 # Install any needed packages specified in requirements.txt

@@ -1,6 +1,12 @@
 # Default target to run all commands
-all: stop build run remove
+all: stop remove build
 
+# Refresh the local container
+refresh: stop remove build run
+
+# Start streamlit app
+dev:
+	streamlit run streamlit_app.py
 
 # Stop and remove the container
 stop:
@@ -12,10 +18,10 @@ build:
 
 # Run the rebuilt container
 run:
-	docker compose up -d --force-recreate st-container
+	docker compose up -d --force-recreate
 
 
 remove:	
-	docker rmi st-container:latest
+	docker rmi st-container:latest --force
 
-.PHONY: all stop run remove
+.PHONY: dev refresh stop build run remove

@@ -25,6 +25,14 @@
 
 This project uses Docker and Docker Compose to manage the development and deployment process of a containerized Streamlit app. The Makefile provides convenient commands to manage the Docker container.
 
+## Pages
+
+- Home
+- Data Generation
+- EDA
+- Playground
+- Download
+
 ## Prerequisites
 
 - Docker
